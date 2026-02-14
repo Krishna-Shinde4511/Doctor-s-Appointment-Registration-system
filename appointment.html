@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointement Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header of the home page -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="hospital-logo">
+                🏥
+            </div>
+            <h1 class="logo-text">Medicare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li> <a href="specializations.html">Specializations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+        <div class="menu-icon">☰</div>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Book Appointment</h1>
+        <p>Schedule your visit with our expert doctors</p>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment-section">
+
+        <form class="appointment-form">
+
+            <h2>Appointment Details</h2>
+
+            <!-- Personal Information -->
+            <div class="form-block">
+                <h3>Personal Information</h3>
+
+                <div class="form-row">
+                    <div class="field">
+                        <label>Full Name *</label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="field">
+                        <label>Email *</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="field">
+                        <label>Phone Number *</label>
+                        <input type="tel" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="field">
+                        <label>Age *</label>
+                        <input type="number" placeholder="Enter your age" min="1" max="120" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Gender *</label>
+                    <select required>
+                        <option value="">Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Appointment Details -->
+            <div class="form-block">
+                <h3>Appointment Details</h3>
+
+                <div class="form-row">
+                    <div class="field">
+                        <label>Specialization *</label>
+                        <select required>
+                            <option value="">Select Specialization</option>
+                            <option>Cardiology</option>
+                            <option>Neurology</option>
+                            <option>Orthopedics</option>
+                            <option>Pediatrics</option>
+                            <option>Ophthalmology</option>
+                            <option>Dentistry</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label>Select Doctor *</label>
+                        <select required>
+                            <option value="">Select Doctor</option>
+                            <option>Dr. Sarah Johnson</option>
+                            <option>Dr. Michael Chen</option>
+                            <option>Dr. Emily Williams</option>
+                            <option>Dr. James Wilson</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="field">
+                        <label>Date *</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="field">
+                        <label>Time *</label>
+                        <select required>
+                            <option value="">Select Time</option>
+                            <option>09:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>03:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>05:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Symptoms</label>
+                    <textarea rows="4" placeholder="Describe your symptoms..."></textarea>
+                </div>
+            </div>
+
+            <button class="appointment-btn">Book Appointment</button>
+
+        </form>
+
+    </section>
+
+
+
+
+    <footer class="footer">
+
+        <!-- TOP FOOTER (ALL COLUMNS IN ONE ROW) -->
+        <div class="top-footer">
+
+            <!-- COLUMN 1 -->
+            <div class="first-div">
+                <div class="top-div">
+                    <div class="logo">🏥</div>
+                    <h3>Medicare</h3>
+                </div>
+                <div class="bottom-div">
+                    <p>
+                        Your trusted partner in healthcare. We provide quality
+                        medical services with compassion and care.
+                    </p>
+                </div>
+            </div>
+
+            <!-- COLUMN 2 -->
+            <div class="second-div">
+                <ul>
+                    <strong>Quick Links</strong>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="specializations.html">Specializations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="three-div">
+                <ul>
+                    <strong>Services</strong>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Orthopedics</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 4 -->
+            <div class="fourth-div">
+                <h2>Contact Us</h2>
+                <p>📍 123 Medical Center, Latur City</p>
+                <p>📞 +91 9503166706</p>
+                <p>✉️ info@medicare.com</p>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="bottom-footer">
+            <p>© 2025 MediCare. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

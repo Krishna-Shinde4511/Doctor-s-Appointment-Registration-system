@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header of the home page -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="hospital-logo">
+                🏥
+            </div>
+            <h1 class="logo-text">Medicare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li> <a href="specializations.html">Specializations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+        <div class="menu-icon">☰</div>
+
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Our Doctors</h1>
+        <p>Find and book appointments with our expert physicians</p>
+    </section>
+
+    <!-- SEARCH & FILTER -->
+    <section class="search-section">
+        <div class="search-box">
+            <input type="text" id="searchDoctor" class="search-input" placeholder="Search doctors by name..." />
+            <select id="filterSpecialty" class="filter-select">
+                <option value="">All Specializations</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="ophthalmology">Ophthalmology</option>
+                <option value="dentistry">Dentistry</option>
+            </select>
+            <button id="resetFilters" class="reset-btn">Reset</button>
+        </div>
+    </section>
+
+    <!-- DOCTORS LIST -->
+    <section class="doctors-list">
+        <div class="doctors-grid">
+
+            <!-- CARD 1 -->
+            <div class="doctor-card" data-specialty="cardiology">
+                <div class="doctor-image">
+                    <img src="Assets/beautiful-young-female-medical-doctor-is-looking-at-camera-and-smiling-shot-of-a-female-doctor-standing-confidently-with-her-arms-crossed-photo.jpg"
+                        alt="Dr. Sarah Johnson">
+                    <span class="doctor-badge">⭐ 4.9</span>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.Sarah Johnson</h3>
+                    <p class="doctor-specialty">Cardiologist</p>
+                    <p class="doctor-experience">15+ Years Experience</p>
+                    <p class="doctor-location">📍 City Hospital</p>
+                    <div class="doctor-actions">
+                        <a href="appointment.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="doctor-card" data-specialty="neurology">
+                <div class="doctor-image">
+                    <img src="Assets/istockphoto-1161336374-612x612.jpg" alt="Dr. Michael Chen">
+                    <span class="doctor-badge">⭐ 4.8</span>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.Michael Chen</h3>
+                    <p class="doctor-specialty">Neurologist</p>
+                    <p class="doctor-experience">12+ Years Experience</p>
+                    <p class="doctor-location">📍 Neuro Wing</p>
+                    <div class="doctor-actions">
+                        <a href="appointment.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="doctor-card" data-specialty="pediatrics">
+                <div class="doctor-image">
+                    <img src="Assets/young-female-doctor-holding-clipboard_969100-6476.jpg" alt="Dr. Emily Williams">
+                    <span class="doctor-badge">⭐ 4.9</span>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.Emily Williams</h3>
+                    <p class="doctor-specialty">Pediatrician</p>
+                    <p class="doctor-experience">10+ Years Experience</p>
+                    <p class="doctor-location">📍 Children Care Center</p>
+                    <div class="doctor-actions">
+                        <a href="appointment.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="doctor-card" data-specialty="orthopedics">
+                <div class="doctor-image">
+                    <img src="Assets/istockphoto-1327024466-612x612.jpg" alt="Dr. Mike Wilson">
+                    <span class="doctor-badge">⭐ 4.7</span>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.Mike Wilson</h3>
+                    <p class="doctor-specialty">Orthopedic Surgeon</p>
+                    <p class="doctor-experience">14+ Years Experience</p>
+                    <p class="doctor-location">📍 Ortho Wing</p>
+                    <div class="doctor-actions">
+                        <a href="appointment.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="doctor-card" data-specialty="ophthalmology">
+                <div class="doctor-image">
+                    <img src="Assets/young-indian-female-doctor-image_669954-13654.avif" alt="Dr. Anita Desai">
+                    <span class="doctor-badge">⭐ 4.8</span>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.Anita Desai</h3>
+                    <p class="doctor-specialty">Ophthalmologist</p>
+                    <p class="doctor-experience">14+ Years Experience</p>
+                    <p class="doctor-location">📍 Eye Care Center</p>
+                    <div class="doctor-actions">
+                        <a href="appointment.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="doctor-card" data-specialty="dentistry">
+                <div class="doctor-image">
+                    <img src="Assets/istockphoto-1298800629-612x612.jpg" alt="Dr. Rajesh Kumar">
+                    <span class="doctor-badge">⭐ 4.6</span>
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr.Rajesh Kumar</h3>
+                    <p class="doctor-specialty">Dentist</p>
+                    <p class="doctor-experience">18+ Years Experience</p>
+                    <p class="doctor-location">📍 Dental Care Clinic</p>
+                    <div class="doctor-actions">
+                        <a href="appointment.html">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+            <p id="noDoctorsMessage">
+                ❌ No doctors found
+            </p>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <!-- TOP FOOTER-->
+        <div class="top-footer">
+
+            <!-- COLUMN 1 -->
+            <div class="first-div">
+                <div class="top-div">
+                    <div class="logo">🏥</div>
+                    <h3>Medicare</h3>
+                </div>
+                <div class="bottom-div">
+                    <p>
+                        Your trusted partner in healthcare. We provide quality
+                        medical services with compassion and care.
+                    </p>
+                </div>
+            </div>
+
+            <!-- COLUMN 2 -->
+            <div class="second-div">
+                <ul>
+                    <strong>Quick Links</strong>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="specializations.html">Specializations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 3 -->
+            <div class="three-div">
+                <ul>
+                    <strong>Services</strong>
+                    <li><a href="#">Cardiology</a></li>
+                    <li><a href="#">Neurology</a></li>
+                    <li><a href="#">Orthopedics</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 4 -->
+            <div class="fourth-div">
+                <h2>Contact Us</h2>
+                <p>📍 123 Medical Center, Latur City</p>
+                <p>📞 +91 9503166706</p>
+                <p>✉️ info@medicare.com</p>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="bottom-footer">
+            <p>© 2025 MediCare. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- data-specialty="cardiology" data-name="dr sarah johnson" -->
+<!-- data-specialty="neurology" data-name="dr michael chen" -->
+<!-- data-specialty="pediatrics" data-name="dr emily williams" -->
+<!-- data-specialty="orthopedics" data-name="dr james wilson" -->
+<!-- data-specialty="ophthalmology" data-name="dr anita desai" -->
+<!-- data-specialty="dentistry" data-name="dr rajesh kumar" -->
